@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guia Completo — Pokémon TCG — Império dos Cards</title>
+  <link rel="stylesheet" href="./css/pokemon.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="imagens/Logo.png" alt="Império dos Cards" class="logo">
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="pokemon.html">Pokémon</a>
+        <a href="yugioh.html">Yu-Gi-Oh</a>
+        <a href="magic.html">Magic</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="title-hero">
+      <div class="thumb" aria-hidden="true">
+        <img src="imagens/pokemon2.png" alt="">
+      </div>
+      <div class="meta">
+        <div class="kicker">Guia Completo</div>
+        <h1 id="title-hero">Como funciona o Pokémon TCG — Guia Completo</h1>
+        <p class="lead">Um guia prático e detalhado, cobrindo regras, preparação, construção de deck, termos importantes, estratégias e dicas para jogar e evoluir no Pokémon Trading Card Game.</p>
+
+        <nav class="toc" aria-label="Sumário">
+          <a href="#visao-geral">Visão geral</a>
+          <a href="#componentes">Componentes</a>
+          <a href="#preparacao">Preparação</a>
+          <a href="#turno">Estrutura do turno</a>
+          <a href="#vencer">Como vencer</a>
+          <a href="#deckbuilding">Deckbuilding</a>
+          <a href="#estrategias">Estratégias</a>
+          <a href="#glossario">Glossário</a>
+        </nav>
+      </div>
+    </section>
+
+    <main class="card" role="main">
+
+      <section id="visao-geral">
+        <h2>1. Visão geral rápida</h2>
+        <p>O <strong>Pokémon TCG</strong> é um jogo de cartas colecionáveis para dois jogadores. Cada jogador usa um baralho de <code>60 cartas</code> para batalhar. Cartas representam Pokémon, Energias e Treinadores. O objetivo mais comum é <strong>coletar todas as suas cartas de Prêmio</strong> (normalmente 6), ganhando-as ao nocautear Pokémon adversários.</p>
+      </section>
+
+      <section id="componentes">
+        <h2>2. Componentes principais do jogo</h2>
+        <ul>
+          <li><strong>Pokémon</strong> — cartas com HP, ataques e (às vezes) Habilidades. Tipos: Básico, Estágio 1, Estágio 2, e variantes especiais (V, VMAX, ex, GX, TAG TEAM).</li>
+          <li><strong>Energias</strong> — permitem pagar o custo dos ataques (Básicas e Especiais).</li>
+          <li><strong>Treinador</strong> — cartas de suporte: Itens, Supporters (Apoiadores), Stadiums, Tools.</li>
+          <li><strong>Baralho (deck)</strong> — 60 cartas (regras de formato definem variações).</li>
+          <li><strong>Prêmios</strong> — cartas viradas para baixo que você pega ao nocautear.</li>
+          <li><strong>Zona de jogo</strong> — Ativo, Banco (até 5), Deck, Cemitério e Prêmios.</li>
+        </ul>
+        <div class="note">Dica: sempre leia o texto das cartas especiais — mecânicas como <em>V</em>, <em>VMAX</em> ou <em>ex</em> alteram condições de prêmio ou regras específicas.</div>
+      </section>
+
+      <section id="preparacao">
+        <h2>3. Preparação do jogo (setup padrão)</h2>
+        <ol>
+          <li>Embaralhe o deck e compre <strong>7 cartas</strong>.</li>
+          <li>Coloque um <strong>Pokémon Básico</strong> como Ativo (virado) e até 5 no Banco.</li>
+          <li>Se você não tiver Pokémon Básico, faz <em>mulligan</em>: revele a mão, embaralhe e compre nova mão de 7; o oponente pode comprar 1 carta cada vez que isso ocorrer.</li>
+          <li>Coloque <strong>6 cartas de Prêmio</strong> viradas (padrão competitivo).</li>
+          <li>Sorteie quem começa; normalmente quem começa não compra no primeiro turno.</li>
+        </ol>
+      </section>
+
+      <section id="turno">
+        <h2>4. Estrutura do turno</h2>
+        <p>Um turno padrão segue a sequência abaixo (leia sempre textos de cartas que podem alterar passos):</p>
+        <ol>
+          <li><strong>Efeitos iniciais</strong> (determinados por cartas em jogo).</li>
+          <li><strong>Compra</strong>: compre 1 carta (exceto o primeiro jogador no primeiro turno).</li>
+          <li><strong>Fase principal</strong>: qualquer número de ações permitidas pelas regras, incluindo:
+            <ul>
+              <li>Anexar <strong>1 Energia</strong> da mão a um Pokémon (regra padrão).</li>
+              <li>Jogar cartas de Treinador (itens, supporters — máximo 1 supporter por turno).</li>
+              <li>Evoluir Pokémon (restrição: se foi jogado este turno, geralmente não evolui no mesmo turno).</li>
+              <li>Ativar habilidades (Abilities) permitidas.</li>
+              <li>Retirar (Retreat) pagando custo de Energy.</li>
+            </ul>
+          </li>
+          <li><strong>Ataque</strong>: escolha ataque do Pokémon Ativo, pague custo e resolva dano/efeitos — o turno termina após atacar.</li>
+        </ol>
+      </section>
+
+      <section id="vencer">
+        <h2>5. Como vencer</h2>
+        <ul>
+          <li>Pegar todas as suas <strong>cartas de Prêmio</strong> (normalmente 6).</li>
+          <li>Fazer com que o adversário não tenha <strong>Pokémon em campo</strong> no momento exigido (ex.: sem Básicos para colocar como Ativo).</li>
+          <li>Condições especiais de vitória descritas em determinadas cartas.</li>
+        </ul>
+      </section>
+
+      <section id="nocautear">
+        <h2>6. O que significa “nocaute”</h2>
+        <p>Quando o dano marcado num Pokémon é igual ou superior ao seu HP, ele é <strong>nocautado</strong>, vai para o cemitério e o jogador que causou o nocaute pega o(s) prêmio(s) correspondente(s). Se o Pokémon nocauteado era o Ativo, o dono escolhe um Pokémon do Banco para substituí-lo.</p>
+      </section>
+
+      <section id="treinadores">
+        <h2>7. Tipos de cartas Treinador</h2>
+        <ul>
+          <li><strong>Item</strong> — ações rápidas (buscar, curar, manipular mão).</li>
+          <li><strong>Supporter</strong> — mais poderosas, limitadas a <strong>1 por turno</strong>.</li>
+          <li><strong>Stadium</strong> (Estádio) — ficam em campo e afetam ambos os jogadores até serem trocadas.</li>
+          <li><strong>Tool</strong> — anexa a um Pokémon para efeito contínuo.</li>
+        </ul>
+      </section>
+
+      <section id="energias">
+        <h2>8. Energias e recursos</h2>
+        <p>As <strong>Energias Básicas</strong> provêm o custo dos ataques; Energias Especiais têm efeitos extras. Regra geral: <strong>1 energia anexada por turno</strong>, salvo cartas que permitam mais.</p>
+      </section>
+
+      <section id="regras">
+        <h2>9. Regras e restrições importantes</h2>
+        <ul>
+          <li><strong>1 Supporter por turno</strong> (salvo efeitos).</li>
+          <li><strong>1 anexo de Energia por turno</strong> (salvo efeitos).</li>
+          <li>Não evolua um Pokémon no mesmo turno em que foi jogado (salvo efeitos).</li>
+          <li>Leia o texto das cartas — texto específico prevalece sobre interpretações gerais.</li>
+        </ul>
+      </section>
+
+      <section id="deckbuilding">
+        <h2>10. Construção de deck (deckbuilding)</h2>
+        <p>Dicas práticas para montar um deck consistente:</p>
+        <ul>
+          <li>60 cartas exatas.</li>
+          <li>Equilibre Pokémon / Treinadores / Energias. Exemplo comum competitivo: 16–20 Pokémon, 30–34 Treinadores, 6–14 Energias (varia conforme arquétipo).</li>
+          <li>Inclua draw engines e formas de buscar peças-chave (Quick Ball, Professor-type supporters).</li>
+          <li>Tenha Pokémon Básicos suficientes para evitar mulligans repetidos.</li>
+          <li>Teste contra diferentes arquétipos e ajuste counts conforme necessidade.</li>
+        </ul>
+      </section>
+
+      <section id="estrategias">
+        <h2>11. Arquétipos e estratégias</h2>
+        <h3>Aggro / Rush</h3>
+        <p>Pressão rápida, nocautes frequentes; foco em dano constante.</p>
+        <h3>Control</h3>
+        <p>Negação de recursos, remover energias e controlar campo.</p>
+        <h3>Combo / Setup</h3>
+        <p>Montar uma combinação que gera vitória explosiva.</p>
+        <h3>Midrange</h3>
+        <p>Equilíbrio entre pressão e resposta — muito comum em ambientes competitivos.</p>
+      </section>
+
+      <section id="formatos">
+        <h2>12. Formatos de jogo</h2>
+        <ul>
+          <li><strong>Standard</strong> — expansões mais recentes (rotações anuais).</li>
+          <li><strong>Expanded</strong> — pool maior de cartas.</li>
+          <li><strong>Casual e especiais</strong> — Theme, Singleton e outros formatos divertidos.</li>
+        </ul>
+      </section>
+
+      <section id="dicas">
+        <h2>13. Dicas práticas e erros comuns</h2>
+        <ul>
+          <li>Valorize cartas de Treinador — são o motor do deck.</li>
+          <li>Tenha formas de buscar Pokémon Básicos.</li>
+          <li>Não evolua sem planejamento — evite deixar Pokémon sem energia.</li>
+          <li>Pratique mulligan e opening hands — o início do jogo decide muito.</li>
+          <li>Leia o texto completo das cartas para evitar interpretações erradas.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Atenção:</strong> em torneios, use sleeves idênticas, embaralhe bem e peça auxílio a um juiz quando houver conflito de regras.
+        </div>
+      </section>
+
+      <section id="glossario">
+        <h2>14. Glossário rápido</h2>
+        <ul>
+          <li><strong>Ativo</strong> — Pokémon que está atacando/defendendo no momento.</li>
+          <li><strong>Banco</strong> — até 5 Pokémon em espera.</li>
+          <li><strong>Prêmios</strong> — cartas que o oponente pega ao ser nocauteado.</li>
+          <li><strong>Cemitério</strong> — cartas usadas/descartadas.</li>
+          <li><strong>Retreat</strong> — custo para trocar o Pokémon Ativo.</li>
+          <li><strong>Mulligan</strong> — refazer mão inicial por falta de Pokémon Básico.</li>
+        </ul>
+      </section>
+
+      <section id="exemplos">
+        <h2>15. Exemplo de deck esqueleto (iniciante)</h2>
+        <p>Um ponto de partida simples:</p>
+        <ul>
+          <li>Pokémon: ~16 (Básicos + evoluções)</li>
+          <li>Treinadores: ~34 (draw/search como Professors, Quick Ball, itens)</li>
+          <li>Energias: ~10–12 (ajuste conforme custo médio do deck)</li>
+        </ul>
+        <p>Teste e ajuste — cada arquétipo pede diferentes proporções.</p>
+      </section>
+
+      <section id="avancado">
+        <h2>16. Dicas avançadas</h2>
+        <ul>
+          <li>Gerencie prêmios: saiba quantos prêmios cada jogador precisa e jogue de acordo.</li>
+          <li>Planeje combos com antecedência e proteja suas peças-chave.</li>
+          <li>Estude matchups — alguns decks são counters naturais de outros.</li>
+          <li>Maximize engines de compra para melhorar consistência.</li>
+        </ul>
+      </section>
+
+      <section id="recursos">
+        <h2>17. Recursos para aprender</h2>
+        <p>Use o site oficial do Pokémon TCG, vídeos comentados de torneios, fóruns e deckbuilders para estudar listas e ver partidas reais. Jogar amistosos com amigos é uma das melhores formas de evoluir rapidamente.</p>
+      </section>
+
+      <section id="conclusao">
+        <h2>18. Conclusão</h2>
+        <p>O Pokémon TCG é fácil de aprender e profundo ao mesmo tempo. Domine os fundamentos (anexo de energia, prêmios, mulligan, uso de Trainers) e pratique constância na construção de deck. Com tempo e estudo, você passa de iniciante a duelista competitivo.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="./javascript/pokemon.js"></script>
+</body>
+</html>

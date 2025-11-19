@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fale Conosco — Império dos Cards</title>
+  <link rel="stylesheet" href="./css/fale-conosco.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="imagens/Logo.png" alt="Império dos Cards" class="logo">
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="pokemon.html">Pokémon</a>
+        <a href="yugioh.html">Yu-Gi-Oh</a>
+        <a href="magic.html">Magic</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="title-hero">
+      <div class="thumb" aria-hidden="true">
+        <img src="imagens/Logo.png" alt="">
+      </div>
+      <div class="meta">
+        <div class="kicker">Entre em contato</div>
+        <h1 id="title-hero">Fale Conosco</h1>
+        <p class="lead">Tem dúvidas, sugestão de conteúdo, quer anunciar ou precisa de suporte? Envie sua mensagem e nossa equipe entrará em contato o mais rápido possível.</p>
+      </div>
+    </section>
+
+    <main class="card" role="main">
+      <div class="contact-grid">
+        <div>
+          <form id="contactForm" class="form-contato" novalidate>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="text" placeholder="(DDD) 9XXXX-XXXX">
+
+            <label for="assunto">Assunto</label>
+            <input id="assunto" name="assunto" type="text" placeholder="Ex.: Dúvida sobre evento">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+
+            <div style="display:flex; gap:12px; align-items:center; margin-top:6px;">
+              <button type="submit" class="btn">Enviar</button>
+              <div id="formFeedback" class="small" aria-live="polite"></div>
+            </div>
+
+            <div id="successBox" class="success" style="display:none;">
+              Obrigado! Sua mensagem foi recebida (simulação). Entraremos em contato em breve.
+            </div>
+          </form>
+        </div>
+
+        <aside class="info-box" aria-label="Informações de contato">
+          <h3 style="color:var(--text); margin-bottom:8px;">Outros meios de contato</h3>
+          <p class="small"><strong>E-mail:</strong> atendimento@imperiodoscards.com</p>
+          <p class="small"><strong>WhatsApp:</strong> (11) 90000-0000</p>
+          <p class="small"><strong>Telefone:</strong> (11) 3000-0000</p>
+          <p class="small"><strong>Instagram:</strong> @imperiodoscards</p>
+
+          <div style="margin-top:14px;">
+            <a href="mailto:atendimento@imperiodoscards.com" class="btn" style="width:100%;">Enviar e-mail</a>
+          </div>
+
+          <div style="margin-top:18px; color:var(--muted); font-size:13px;">
+            <strong>Horário de atendimento:</strong>
+            <p class="small" style="margin-top:6px;">Seg–Sex: 09:00–18:00 (BRT)</p>
+          </div>
+        </aside>
+      </div>
+
+    </main>
+  </div>
+  <script src="./javascript/fale-conosco.js"></script>
+  
+</body>
+</html>
