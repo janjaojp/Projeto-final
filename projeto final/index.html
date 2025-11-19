@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Império dos Cards — Início</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="imagens/Logo.png" alt="Império dos Cards" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="mod">Início</a></li>
+                    <li><a href="pokemon.html">Pokémon</a></li>
+                    <li><a href="yugioh.html">Yu-Gi-Oh</a></li>
+                    <li><a href="magic.html">Magic</a></li>
+                    <li><a href="sobre-tcgs.html">TCGs</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="fale-conosco.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section aria-label="Destaques">
+            <div class="list" role="list">
+                <div class="item active" data-index="0" role="listitem">
+                    <div class="card-img">
+                        <img src="imagens/pokemon2.png" alt="Pokémon" class="img">
+                    </div>
+                    <div class="content">
+                        <div class="card-information">Guia Completo</div>
+                        <h2>Pokémon</h2>
+                        <p class="description">Evolução, estratégia e colecionismo — aprenda a jogar e montar decks
+                            poderosos.</p>
+                        <a class="information" href="pokemon.html">Abrir guia</a>
+                    </div>
+                </div>
+
+                <div class="item" data-index="1" role="listitem">
+                    <div class="card-img">
+                        <img src="imagens/yugi-oh2.png" alt="Yu-Gi-Oh" class="img">
+                    </div>
+                    <div class="content">
+                        <div class="card-information">Estratégia e Combos</div>
+                        <h2>Yu-Gi-Oh!</h2>
+                        <p class="description">Invocações, combos e jogadas que mudam o duelo — domine as mecânicas.</p>
+                        <a class="information" href="yugioh.html">Abrir guia</a>
+                    </div>
+                </div>
+                <div class="item" data-index="2" role="listitem">
+                    <div class="card-img">
+                        <img src="imagens/magic2.png" alt="Magic" class="img">
+                    </div>
+                    <div class="content">
+                        <div class="card-information">Construção de Deck</div>
+                        <h2>Magic</h2>
+                        <p class="description">Mana, sinergia e formatos — aprenda a construir e pilotar decks
+                            vencedores.</p>
+                        <a class="information" href="magic.html">Abrir guia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows" aria-hidden="false">
+                <button id="prevBtn" aria-label="Anterior"><img src="imagens/arrow.png" alt="anterior"></button>
+                <button id="nextBtn" aria-label="Próximo"><img src="imagens/arrow.png" alt="próximo"></button>
+            </div>
+
+            <div class="indicators" aria-hidden="false">
+                <div class="number" id="slideNumber">01</div>
+                <ul id="dots" role="tablist" aria-label="Navegação de slides">
+                    <li class="active" data-index="0" role="tab" aria-selected="true" tabindex="0"></li>
+                    <li data-index="1" role="tab" aria-selected="false" tabindex="0"></li>
+                    <li data-index="2" role="tab" aria-selected="false" tabindex="0"></li>
+                </ul>
+            </div>
+        </section>
+
+        <main class="card" role="main">
+            <h2 class="card-title">Bem-vindo ao Império dos Cards</h2>
+            <p class="muted">Aqui você encontra guias, notícias e material educativo sobre os principais TCGs — Pokémon,
+                Yu-Gi-Oh! e Magic. Explore os guias, aprenda a montar decks e acompanhe dicas para evoluir como jogador.
+            </p>
+
+            <div style="display:flex; gap:12px; margin-top:18px; flex-wrap:wrap;">
+                <a href="pokemon.html" class="btn">Guia Pokémon</a>
+                <a href="yugioh.html" class="btn">Guia Yu-Gi-Oh</a>
+                <a href="magic.html" class="btn">Guia Magic</a>
+                <a href="sobre-tcgs.html" class="btn">Sobre os TCGs</a>
+                <a href="quem-somos.html" class="btn">Quem Somos</a>
+                <a href="fale-conosco.html" class="btn">Fale Conosco</a>
+            </div>
+
+            <footer>
+                <p>© <strong>Império dos Cards</strong> — Todos os direitos reservados.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+
+        :root {
+            --bg: #000000;
+            --text: #ffffff;
+            --muted: #dfe7ea;
+            --accent: #0d819e;
+            --accent-2: #4ce6e6;
+            --card-bg: rgba(255, 255, 255, 0.02);
+            --glass: rgba(255, 255, 255, 0.03);
+            --radius: 12px;
+            --max-width: 1300px;
+            --shadow: 0 18px 40px rgba(2, 6, 23, 0.6);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--bg) 0%, #050507 100%);
+            color: var(--text);
+            font-family: "Poppins", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+            padding: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        header {
+            position: sticky;
+            top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 20px;
+            z-index: 50;
+        }
+
+        .logo {
+            height: 56px;
+            display: block;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 12px;
+            list-style: none;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: color .18s ease, transform .18s ease, background .18s ease;
+        }
+
+        nav a:hover {
+            color: var(--text);
+            transform: translateY(-2px);
+        }
+
+        nav a.mod {
+            color: var(--text);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+            box-shadow: var(--shadow);
+            background-color: #0d819e;
+        }
+
+        section {
+            height: 72vh;
+            position: relative;
+            background-image: radial-gradient(circle at 10% 10%, var(--accent-2), rgba(190, 110, 18, 0.12));
+            border-radius: 16px;
+            padding: 22px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            overflow: hidden;
+        }
+
+        .list {
+            width: 70vw;
+            height: 100%;
+            margin: auto;
+            position: relative;
+        }
+
+        .list .item {
+            position: absolute;
+            inset: 0;
+            transition: transform .5s ease, opacity .5s ease;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            padding: 18px;
+        }
+
+        .list .item.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .card-img {
+            position: relative;
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-img .img {
+            width: 80%;
+            transform: rotate(-15deg);
+            display: block;
+        }
+
+        .content {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .card-information {
+            font-weight: 700;
+            color: var(--muted);
+            letter-spacing: .06em;
+        }
+
+        h2 {
+            font-family: "League Gothic", sans-serif;
+            font-size: 64px;
+            line-height: 0.95;
+            color: var(--text);
+            margin: 0;
+        }
+
+        .description {
+            color: var(--muted);
+            max-width: 40ch;
+            font-size: 15px;
+        }
+
+        .information {
+            margin-top: 8px;
+            border-radius: 30px;
+            height: 42px;
+            padding: 0 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            border: 2px solid var(--accent);
+            background-color: var(--accent);
+            color: #000;
+            cursor: pointer;
+            font-weight: 800;
+            font-family: "League Gothic", sans-serif;
+            text-decoration: none;
+        }
+
+        .arrows {
+            width: 70vw;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -25px);
+
+            display: flex;
+            justify-content: space-between;
+            pointer-events: auto;
+            z-index: 1250;
+            
+        }
+
+        .arrows button {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(6px);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.5);
+            transition: transform .18s ease, background .18s ease;
+            z-index: 1250;
+        }
+
+        .arrows button:hover {
+            transform: scale(1.04);
+            background: rgba(255, 255, 255, 0.10);
+        }
+
+        .arrows img {
+            width: 28px;
+            display: block;
+            filter: none;
+        }
+
+        .indicators {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90vw;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 12px;
+            height: 200px;
+            align-items: center;
+            pointer-events: none;
+            z-index: 1100;
+        }
+
+        .indicators .number {
+            font-size: 4.2em;
+            font-family: "League Gothic", sans-serif;
+            color: var(--text);
+            pointer-events: auto;
+        }
+
+        .indicators ul {
+            display: flex;
+            gap: 10px;
+            pointer-events: auto;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .indicators ul li {
+            width: 50px;
+            height: 6px;
+            background-color: var(--accent);
+            border-radius: 6px;
+            transition: 0.4s;
+            cursor: pointer;
+            position: relative;
+            list-style: none;
+            
+        }
+
+        .indicators ul li.active {
+            background-color: #fff;
+        }
+
+        .indicators ul li::marker,
+        .indicators ul li::before,
+        .indicators ul li::after {
+            content: none !important;
+            display: none !important;
+            background: transparent !important;
+            border: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        main.card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 26px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            box-shadow: 0 12px 34px rgba(2, 6, 23, 0.6);
+            margin-top: 28px;
+        }
+
+        h2.card-title {
+            color: var(--accent-2);
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            background: var(--accent);
+            color: #000;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 24px;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        .list {
+            --calculation: 1;
+        }
+
+        .list .item {
+            transform: translateX(calc(100vw * var(--calculation)));
+            opacity: 0;
+        }
+
+        .list .item .card-img .img {
+            transform: rotate(0);
+            transition: transform .5s .3s;
+        }
+
+        .list .item .content .card-information,
+        .list .item .content h2,
+        .list .item .content .description,
+        .list .item .content .information {
+            transform: translateX(calc(200px * var(--calculation)));
+            transition: transform .7s .3s, opacity .7s .3s;
+            opacity: 0;
+        }
+
+        .list .item.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .list .item.active .card-img .img {
+            transform: rotate(-20deg);
+            transition: transform .5s .3s;
+        }
+
+        .list .item.active .content .card-information,
+        .list .item.active .content h2,
+        .list .item.active .content .description,
+        .list .item.active .content .information {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        @media (max-width:1000px) {
+            section {
+                height: auto;
+                padding: 18px;
+            }
+
+            .list {
+                width: 90vw;
+            }
+
+            .list .item {
+                position: relative;
+                display: block;
+                padding: 18px 0;
+                gap: 12px;
+            }
+
+            .card-img {
+                width: 100%;
+                order: 1;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .card-img .img {
+                width: 60%;
+                transform: rotate(-10deg);
+            }
+
+            .content {
+                width: 100%;
+                order: 2;
+                align-items: center;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+
+            .indicators {
+                position: static;
+                transform: none;
+                margin-top: 14px;
+            }
+
+            .arrows {
+                top: auto;
+                position: static;
+                transform: none;
+                margin-top: 10px;
+                width: 100%;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .arrows button {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        @media (max-width:700px) {
+            body {
+                padding: 12px;
+            }
+
+            h2 {
+                font-size: 34px;
+            }
+
+            nav ul {
+                gap: 6px;
+            }
+
+            .logo {
+                height: 46px;
+            }
+        }
+    
