@@ -68,7 +68,7 @@ O projeto apresenta guias detalhados, layout moderno, páginas exclusivas para c
 ## ⚙️ Como Executar
 
 1. Baixe o projeto ou clone o repositório:
-   git clone https://github.com/usuario/imperiodoscards.git
+   git clone https://github.com/janjaojp/Projeto-final.git
 
 
 2. Execute abrindo o arquivo principal:
