@@ -53,6 +53,8 @@
         .logo {
             height: 56px;
             display: block;
+            background-color: #0d819e;
+            border-radius: 10px;
         }
 
         nav ul {
@@ -435,4 +437,5 @@
                 height: 46px;
             }
         }
+
     
