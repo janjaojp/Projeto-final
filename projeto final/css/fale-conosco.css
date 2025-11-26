@@ -18,6 +18,8 @@
 html,
 body {
     height: 100%;
+    background-color: #0d819e;
+    border-radius: 10px;
 }
 
 body {
@@ -233,4 +235,5 @@ footer {
     h1 {
         font-size: 36px;
     }
+
 }
