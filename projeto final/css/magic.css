@@ -50,6 +50,8 @@ header {
 
 .logo {
     height: 56px;
+    background-color: #0d819e;
+    border-radius: 10px;
 }
 
 nav a {
@@ -250,4 +252,5 @@ code {
     margin-bottom: 6px;
     font-weight: 700;
     color: var(--text);
+
 }
